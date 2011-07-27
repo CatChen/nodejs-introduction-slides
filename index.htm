@@ -232,11 +232,40 @@
 			</header>
 		</section>
 	</div></div>
+	<div class="slide" id="UseCloudServicesLike"><div>
+		<section>
+			<header>
+				<h2>Use cloud services like:</h2>
+			</header>
+			<ul>
+				<li><a href="http://www.heroku.com/">Heroku</a></li>
+				<li><a href="https://no.de/">Joyent no.de</a></li>
+				<li><a href="http://www.cloudfoundry.com/">CloudFoundry</a></li>
+				<li><a href="http://nodester.com/">Nodester</a></li>
+			</ul>
+		</section>
+	</div></div>
 	<div class="slide shout" id="CatChenDotMe"><div>
 		<section>
 			<header>
 				<h2><a href="http://catchen.me" target="_blank">http://catchen.me</a></h2>
 			</header>
+		</section>
+	</div></div>
+	<div class="slide" id="DeployToHeroku"><div>
+		<section>
+			<header>
+				<h2>Deploy to Heroku</h2>
+			</header>
+			<ol>
+				<li><code>gem install heroku</code> (for the first time)</li>
+				<li><code>heroku create --stack cedar</code> to create an app</li>
+				<li>Put <code>web: node web.js</code> in a file named <code>Procfile</code></li>
+				<li>Make sure that <code>package.json</code> is correct</li>
+				<li><code>git push heroku</code></li>
+				<li><code>heroku ps:scale web=1</code> to set web process number to 1</li>
+			</ol>
+			<p>Please read this <a href="http://devcenter.heroku.com/articles/node-js">guide</a> for more details.</p>
 		</section>
 	</div></div>
 	<!--
